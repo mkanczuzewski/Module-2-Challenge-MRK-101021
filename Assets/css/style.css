@@ -166,6 +166,100 @@ body {
     flex-basis: 600px
 }
 
+/* Education */
+.organization {
+    grid-area: org;
+}
+
+.degree-name {
+    grid-area: deg;
+}
+
+.year-attended {
+    grid-area: year;
+}
+
+.grade {
+    grid-area: grade;
+}
+
+.msu-1 {
+    grid-area: msu1;
+}
+
+.msu-2 {
+    grid-area: msu2;
+}
+
+.msu-3 {
+    grid-area: msu3;
+}
+
+.msu-4 {
+    grid-area: msu4;
+}
+
+.pmi-1 {
+    grid-area: pmi1;
+}
+
+.pmi-2 {
+    grid-area: pmi2;
+}
+
+.pmi-3 {
+    grid-area: pmi3;
+}
+
+.pmi-4 {
+    grid-area: pmi4;
+}
+
+.wal-1 {
+    grid-area: wal1;
+}
+
+.wal-2 {
+    grid-area: wal2;
+}
+
+.wal-3 {
+    grid-area: wal3;
+}
+
+.wal-4 {
+    grid-area: wal4;
+}
+
+.wmu-1 {
+    grid-area: wmu1;
+}
+
+.wmu-2 {
+    grid-area: wmu2;
+}
+
+.wmu-3 {
+    grid-area: wmu3;
+}
+
+.wmu-4 {
+    grid-area: wmu4;
+}
+.education-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 286px);
+    grid-template-rows: 3fr 3fr 3fr;
+    align-items: center; /* left and right */
+    justify-content: center; /* up and down */
+    grid-template-areas: 
+        "org deg year grade"
+        "msu1 msu2 msu3 msu4"
+        "pmi1 pmi2 pmi3 pmi4"
+        "wal1 wal2 wal3 wal4"
+        "wmu1 wmu2 wmu3 wmu4";
+}
+
 /* Footer */
 footer {
     background: var(--primary-color);
