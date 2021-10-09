@@ -75,7 +75,6 @@ body {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-
 /* All Section Titles*/
 .section-title {
     font-size: 48px;
@@ -93,6 +92,39 @@ body {
   
 .secondary-border {
     border-color: var(--tertiary-color);
+}
+
+/* Hero Style */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    text-align: center;
+    margin: 3.5%;
+    font-size: 55px;
+}
+
+.hero-self {
+    text-align: center;
+    font-size: 18px;
+}
+    
+.hero-self h3 {
+    font-style: italic;
+    font-size: 25px;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* Goals */
+.goal {
+    margin: 50px 50px;
+}
+.goal ul {
+    margin: 20px 100px;
 }
 
 /* Footer */
