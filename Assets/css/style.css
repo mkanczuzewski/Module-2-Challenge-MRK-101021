@@ -68,11 +68,34 @@ header nav ul li a:hover {
     text-shadow: none;
 }
 
+/* Body */
 body {
-    color: var(--tertiary-color);
+    color: var(--primary-color);
+    background: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;
 }
 
+
+/* All Section Titles*/
+.section-title {
+    font-size: 48px;
+    color: var(--primary-color);
+   /*  border-bottom: 3px solid; 
+    padding-bottom: 20px; */
+    text-align: center;
+    margin: 35px auto 35px auto;
+    width: 50%;
+}
+  
+.primary-border {
+    border-color: var(--primary-color);
+}
+  
+.secondary-border {
+    border-color: var(--tertiary-color);
+}
+
+/* Footer */
 footer {
     background: var(--primary-color);
     width: 100%;
