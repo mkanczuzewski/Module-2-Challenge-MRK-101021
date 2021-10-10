@@ -260,6 +260,10 @@ body {
         "wmu1 wmu2 wmu3 wmu4";
 }
 
+/* Experience */
+
+/* Contact */
+
 /* Footer */
 footer {
     background: var(--primary-color);
@@ -279,8 +283,5 @@ footer h2 {
 footer div {
     line-height: 1.5;
     text-align: right;
-}
-
-footer a {
     color: var(--secondary-color);
 }
