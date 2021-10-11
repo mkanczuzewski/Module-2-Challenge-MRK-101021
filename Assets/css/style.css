@@ -101,12 +101,20 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    text-align: center;
+    position: relative;
+    background-image: url("../images/flower.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero h1 {
+    position: relative;
     text-align: center;
     margin: 3.5%;
     font-size: 55px;
+    text-shadow: 0 0 30px var(--tertiary-color);
 }
 
 .hero-self {
@@ -122,7 +130,7 @@ body {
     font-style: italic;
     font-size: 25px;
     color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 0 30px var(--tertiary-color);
 }
 /* Goals */
 .goal {
@@ -349,6 +357,7 @@ body {
 }
 .education-items {
     display: grid;
+    padding: 100px;
     grid-template-columns: repeat(auto-fit, 286px);
     grid-template-rows: 3fr 3fr 3fr;
     align-items: center; /* left and right */
@@ -362,8 +371,47 @@ body {
 }
 
 /* Experience */
+.job {
+    padding: 15px 100px;
+}
+
+.job-title {
+    font-size: 30px;
+}
+.company {
+    font-size: 25px;
+}
+.address {
+    font-size: 15px;
+    font-style: italic;
+}
+.dates-emp {
+    font-style: italic;
+    text-align: right;
+}
+.description {
+    font-size: 15px;
+}
+
+.achievements ul {
+    list-style: none;
+    line-height: 1.5;
+}
+
+.achievements li::before  {
+    content: "•"; 
+    color: var(--primary-color);
+}
+
 
 /* Contact */
+.contact {
+    text-align: center;
+    background-image: url("../images/phone-booth.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 /* Footer */
 footer {
@@ -385,4 +433,25 @@ footer div {
     line-height: 1.5;
     text-align: right;
     color: var(--tertiary-color);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* not needed
+@media screen and (max-width: 980px) {
+  
+}
+*/
+  
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media only screen and (max-width: 768px) {
+    .education-items {
+        padding: 0px;
+    }
+}
+  
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media only screen and (max-width: 575px) {
+    .project {
+        width: 100%;
+    }
 }
