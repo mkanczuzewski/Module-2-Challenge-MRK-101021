@@ -39,6 +39,7 @@ header a {
 
 header nav {
     margin: 7px 0;
+    display: flex;
 }
 
 header nav ul {
@@ -355,9 +356,11 @@ body {
 }
 .education-items {
     display: grid;
-    padding: 100px;
-    grid-template-columns: repeat(auto-fit, 286px);
-    grid-template-rows: 3fr 3fr 3fr;
+    padding: 75px;
+    grid-auto-rows: 75px;
+    grid-auto-columns: 200px;
+    /* grid-template-columns: repeat(auto-fit, 286px);
+    grid-template-rows: repeat(4 30fr);
     align-items: center; /* left and right */
     justify-content: center; /* up and down */
     grid-template-areas: 
@@ -433,26 +436,7 @@ footer div {
     color: var(--tertiary-color);
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-/*@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-/* Styles */
-/*.project {
-    flex-basis: 100%;
-    }
-
-/* iPads (portrait) ----------- */
-/*@media only screen 
-and (orientation : portrait) {
-/* Styles */
-/*.project {
-    flex-basis: 100%;
-    }
-} */
-
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-
 @media screen and (max-width: 980px) {
     header nav ul li a {
         font-size: 30px;
@@ -465,7 +449,7 @@ and (orientation : portrait) {
     }  
 
     .project {
-        flex-basis: 100%;
+        flex-basis: 80%;
         justify-content: space-evenly;
     }
 
@@ -483,23 +467,34 @@ and (orientation : portrait) {
 }
 
   
-/* MEDIA QUERY FOR TABLETS AND SMALLER
-@media only screen and (max-width: 768px) {
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
     .education-items {
-        padding: 20px;
+        padding: 50px;
+        grid-auto-rows: 75px;
+        grid-auto-columns: 175px;
+    }
+
+    header nav ul li a {
+        padding: 5px 5px;
+        font-size: 20px;
+    }
+
+    header nav ul {
+        justify-content: center;
+        padding: 30 30;
+
     }
 }
-   */
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER
+   
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media only screen and (max-width: 575px) {
-    .project {
-        margin: auto;
-        padding: auto;
-        flex-grow: 2; 
-        flex-basis: 100%;
+    .education-items {
+        grid-auto-rows: 100px;
+        grid-auto-columns: 100px;
+        word-wrap:break-word
     }
-    */
 
-        
+
+}
     
-    }
