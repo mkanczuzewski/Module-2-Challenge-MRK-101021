@@ -1,4 +1,4 @@
-# This is a refractor of the Horiseon website to follow accessibility standards.
+# This is the creation of a portfolio website for Mark Kanczuzewski
 
 The purpose of this project is to create a portfolio website for Mark Kanczuzewski. The following critieria, in the developers own words, were met during the creation of this file:
 
