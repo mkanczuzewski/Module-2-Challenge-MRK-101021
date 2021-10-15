@@ -131,29 +131,37 @@ body {
 /* Goals */
 .goal {
     margin: 50px 50px;
+    scroll-margin-top: 5em;
 }
+
 .goal ul {
     margin: 20px 100px;
 }
 
 /* Project Examples */
+.project-examples {
+    scroll-margin-top: 5em;
+}
+
 .flex-row {
     display: flex;
   }
 
 .projects {
-
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    flex-flow: row wrap;
     justify-content: center;
+    width: 1080px;
 }
 
 .project {
     margin: 20px 20px;
     background: var(--secondary-color);
     color: var(--primary-color);
-    flex-basis: 500px;
+    flex-basis: 400px;
+    width: 400px;
 }
 
 .project p {
@@ -175,10 +183,13 @@ body {
 }
 
 .project:hover {
-    flex-basis: 800px
+    flex-basis: 600px;
 } 
 
 /* Education */
+.education {
+    scroll-margin-top: 5em;
+}
 .organization {
     grid-area: org;
 }
@@ -372,6 +383,10 @@ body {
 }
 
 /* Experience */
+.experience {
+    scroll-margin-top: 5em;
+}
+
 .job {
     padding: 15px 100px;
 }
@@ -448,8 +463,13 @@ footer div {
         background-attachment: scroll;
     }  
 
+    .projects {
+        margin: 0 0;
+        width: auto;
+    }
+
     .project {
-        flex-basis: 80%;
+        flex-basis: 60%;
         justify-content: space-evenly;
     }
 
